@@ -8,7 +8,7 @@ const usersRoutes = require('./routes/usersroute');
 
 const app = express();
 
-// Penser à camoufler les ID de Connexion avant le passage de la certif.
+
 mongoose.connect("mongodb+srv://<username>:<password>@cluster0-vatom.mongodb.net/<database>", { useNewUrlParser: true, useCreateIndex: true }) // Connection par Compass
   .then(() => {
     console.log('Connection Successful !');
