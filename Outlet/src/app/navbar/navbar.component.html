@@ -1,0 +1,18 @@
+<!-- Titre de la Boutique -->
+
+<h1><i class="material-icons" style="color: white;">desktop_windows</i>TIE Outlet</h1>
+
+<!-- Barre de Navigation - Redirection des sections du menu par un RouterLink -->
+
+<nav>
+  <a routerLink="/login" class="button cool-button" *ngIf="!userIsAuthenticated" mat-button><i class="material-icons">power_settings_new</i>My Account</a>
+  &nbsp;
+  <a routerLink="/home" class="button cool-button" mat-button><i class="material-icons">home</i>Home</a>
+  &nbsp;
+  <a routerLink="/cart" class="button cool-button" *ngIf="userIsAuthenticated" mat-button><i class="material-icons">shopping_cart</i>Cart</a>
+  &nbsp;
+  <a routerLink="/games" class="button cool-button" mat-button><i class="material-icons">gamepad</i>Games</a>
+  &nbsp;
+  <button class="button cool-button" (click)="onLogout()" *ngIf="userIsAuthenticated" mat-button><i class="material-icons">exit_to_app</i>Logout</button>
+</nav>
+

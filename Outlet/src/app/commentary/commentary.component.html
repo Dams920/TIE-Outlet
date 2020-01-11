@@ -1,0 +1,35 @@
+<!-- <mat-card>
+  <form>
+      <mat-form-field>Title:
+        <input matInput type="text" [(ngModel)]="EnteredTitle">
+      </mat-form-field>
+      <br />
+      <mat-form-field>Comment:
+        <textarea matInput rows="1" [(ngModel)]="EnteredCommentary"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="warn" (click)="onCommentary()">Post Commentary</button>
+  </form>
+</mat-card> -->
+
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form [formGroup]="form" (submit)="onSaveCommentary()" *ngIf="!isLoading">
+        <mat-form-field>
+          <input matInput type="text" name="title"
+          [formControlName]="'title'"
+          placeholder="Title">
+          <mat-error *ngIf="form.get('title').invalid">Please enter a title</mat-error>
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <textarea matInput rows="1" name="content"
+          [formControlName]="'content'"
+          placeholder="Comment">
+          </textarea>
+          <mat-error *ngIf="form.get('content').invalid">Please enter a comment</mat-error>
+        </mat-form-field>
+        <br />
+        <button mat-raised-button type="submit" style="background-color: #2743e6;">Post Commentary</button>
+    </form>
+  </mat-card>
+

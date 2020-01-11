@@ -1,0 +1,17 @@
+<h3>My Cart</h3>
+
+<div class="cart-item" *ngFor="let game of items">
+  <span>{{ game.name + '(' + game.platform + ')' }}</span>
+  <span>{{ game.price | currency: 'EUR' }}</span>
+  <button class="delete" (click)="removeToCart(game.id)"><i class="material-icons" style="color: white;">clear</i></button>
+</div>
+
+<div>
+  <label>Total:
+      {{ total | currency: 'EUR' }}
+  </label>
+</div><br />
+
+<button [routerLink]="['/buy']">Confirm Order</button>
+&nbsp;
+<button (click)="Back()">Back</button>

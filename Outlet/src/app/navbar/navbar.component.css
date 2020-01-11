@@ -1,0 +1,101 @@
+@media (max-width: 360px) {
+  .button, button {
+    display: inline;
+    align-items: flex-end;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+  }
+
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+
+
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  .cool-button {
+    background-color: white;
+    color: #1976d2;
+  }
+
+  .cool-button i.material-icons {
+    display: hidden;
+  }
+}
+
+@media (max-width: 375px) {
+  .button, button {
+    display: inline;
+    align-items: flex-end;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+  }
+
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+
+
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  .cool-button {
+    background-color: white;
+    color: #1976d2;
+  }
+
+  .cool-button i.material-icons {
+    display: hidden;
+  }
+}
+
+@media (max-width: 414px) {
+  .button, button {
+    display: inline;
+    align-items: flex-end;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+  }
+
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+
+
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  .cool-button {
+    background-color: white;
+    color: #1976d2;
+  }
+
+  .cool-button i.material-icons {
+    display: hidden;
+  }
+}

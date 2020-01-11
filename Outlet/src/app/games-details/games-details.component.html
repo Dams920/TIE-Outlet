@@ -1,0 +1,28 @@
+<h2>Video Games Details</h2>
+
+<div *ngIf="product"> <!-- Si il existe des 'products' du tableau 'games', il affiche les infos ci-contre -->
+
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency: 'EUR' }}</h4>
+  <p>{{ product.description }}</p>
+
+  <button (click)="addToCart(product)">Add</button>
+  &nbsp;
+  <button (click)="Back()">Back</button>
+
+  &nbsp;
+
+<div class="comment">
+  <app-commentary></app-commentary>
+</div>
+&nbsp;
+<div class="commentlist">
+  <app-commentary-list></app-commentary-list>
+</div>
+
+</div>
+
+<!-- <hr /> -->
+
+
+

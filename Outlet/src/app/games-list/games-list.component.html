@@ -1,0 +1,18 @@
+<h2>Video Games</h2>
+
+<!-- Pour chaque 'Product' du tableau 'games' dans games.ts & définit automatiquement l'ID des 'Product' -->
+<div *ngFor="let product of gamers; index as productId">
+
+  <h3>
+    <!-- Affiche le titre de tous les jeux du tableau -->
+    <a [title]="product.name + ' details'" [routerLink]="['/games', productId]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <!-- Affiche la description de tous les jeux du tableau -->
+  <p *ngIf="product.description"> <!-- Si il y a une description ; Il l'affiche la description de tous les jeux du tableau -->
+    Description: {{ product.description }}
+  </p>
+
+</div>

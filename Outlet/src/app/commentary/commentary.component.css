@@ -1,0 +1,16 @@
+.Commentary {
+  color: black;
+}
+
+mat-from-field,
+textarea {
+  width: 100%;
+}
+
+mat-card {
+  background-color: white;
+}
+
+mat-spinner {
+  margin: auto;
+}

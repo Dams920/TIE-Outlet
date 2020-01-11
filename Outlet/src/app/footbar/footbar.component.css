@@ -1,0 +1,23 @@
+p {
+  color: white;
+}
+
+.link {
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin: 0;
+    padding: 0;
+    column-count: 3;
+    column-gap: 225px;
+    column-width: 60px;
+    column-rule-width: 2px;
+    column-rule-color: black;
+    column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    z-index: 99;
+  }
+}

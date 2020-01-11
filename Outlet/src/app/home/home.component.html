@@ -1,0 +1,15 @@
+<h3>Top Games</h3>
+
+<!-- Mis en place d'un 'grid' pour la mise en place de carte répresentant les jeux vidéos présent avec
+un RouterLink afin de rédiriger immédiatemment vers le jeu sélectionné -->
+
+<div class="grid grid-pad">
+  <a *ngFor="let item of games; index as productId" class="col-0-5"
+  routerLink="/games/{{ productId }}">
+    <div class="module item">
+      <h4>{{ item.name }}</h4>
+    </div>
+  </a>
+</div>
+
+
